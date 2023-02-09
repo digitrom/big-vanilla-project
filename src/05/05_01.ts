@@ -41,8 +41,6 @@ const dev2 = [
     dimychTransformator(people[2]),
 ];
 
-const messages = people.map( man => `Hello ${man.name.split(" ")[0]}`)
-
 export const createGreetingsMessage = (people: Array<ManType>) => {
    return people.map(man => `Hello ${man.name.split(" ")[0]}. Welcome to IT-Incubator`
 )}

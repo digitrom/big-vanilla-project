@@ -17,7 +17,7 @@ test("sum should be correct", () => {
     const result1 = sum(a,b);
     const result2 = sum(b,c);
 
-    //expect result
+    //expect result - сценарии теста
 
     expect(result1).toBe(3)
     expect(result2).toBe(5)

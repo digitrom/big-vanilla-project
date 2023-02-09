@@ -14,6 +14,7 @@ test("should get array of greetings messages", () => {
 
     const messages = createGreetingsMessage(people)
 
+    // сценарии теста
     expect(messages.length).toBe(3);
     expect(messages[0]).toBe("Hello Andrew. Welcome to IT-Incubator")
     expect(messages[1]).toBe("Hello Alexander. Welcome to IT-Incubator")
