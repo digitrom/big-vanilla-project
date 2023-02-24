@@ -1,14 +1,5 @@
+import {ManType} from "./Destructuring";
 
-type ManType = {
-    name: string
-    age: number
-    lessons: Array<{title: string}>
-    address: {
-        street: {
-            title: string
-        }
-    }
-}
 
 let props: ManType
 
