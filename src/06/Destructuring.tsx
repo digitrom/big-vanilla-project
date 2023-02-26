@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 
 export type ManType = {
     name: string
@@ -17,6 +17,8 @@ type PropsType = {
     food: Array<string>
     car: {model: string}
 }
+
+
 
 //ВАРИАНТЫ ДЕСТРУКТУРИЗАЦИИ
 
@@ -43,6 +45,12 @@ type PropsType = {
 
 
 const ManComponent: React.FC<PropsType> = (props) => {
+
+    function useRomanState (m: string) {
+        return [m, function(){}]
+    }
+
+    const [message, setMessage] = useRomanState("Hey")
 const {title, man, ...restProps} = props
 
     return (
@@ -88,3 +96,4 @@ const {title, man, ...restProps} = props
 //         </div>
 //     )
 // }
+
